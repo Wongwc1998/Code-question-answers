@@ -1,0 +1,15 @@
+Q2a: Hypothesis: said function is a base 62 encoding, with a scrambled encoding, where 1 is not represented by 1, but by some character from 0-9, A-Z, and a-z. What follows A is not B, judging that what follows "VeK" is "Vel". Proof is that 50129,Tx2 , and 51183, Tn2 have the same last digit "2". 51183-50129 = 1054, 1054/62 = 17.
+
+By using modulo and division we can get which digit represent which number. We get a mapping like this:
+["30,p", "35,W", "23,3", ...etc.]
+
+mappings for '5', 'o', 'y' are missing. One can see that 'y' comes after 'Z', and 'o' comes after 'N' from the patterns. The conclusion is that the order is "C7xicPMGvzAZyTNodmwnV5D3B6H0Oup8E21W9sqLQX4YjSeUhIRJgafFtrKlbk"
+
+Q2b: 
+f(30001)=GIF
+f(55555)=NOi
+f(77788)=VNQ
+
+Q2c: The upper limit of the function is 62^3 = 238328 before a collision or overflow happens.
+
+Q2d: Code is Q2.py. Included is also the .xlsx file done for the mapping.
